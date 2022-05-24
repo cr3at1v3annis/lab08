@@ -3,7 +3,7 @@
   
 ```sh
 FROM python:3
-LABEL mainteiner = cr3at1v3annis
+LABEL maintainer = cr3at1v3annis
 WORKDIR /app
 COPY . . 
 RUN apt-get update 
