@@ -1,0 +1,19 @@
+
+name: Docker
+
+on:
+  push:
+    branches: 
+      main 
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: BuildFileByDocker
+        run: |
+          sudo docker buiid -t my_app ./python
+          sudo docker run my_app
