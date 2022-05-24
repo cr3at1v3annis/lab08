@@ -15,5 +15,5 @@ jobs:
 
       - name: BuildFileByDocker
         run: |
-          sudo docker buiid -t my_app ./python
-          sudo docker run my_app
+          sudo docker buiid -t myapp ./python
+          sudo docker run myapp
